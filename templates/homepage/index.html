@@ -1,0 +1,59 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href="{% static "css\homepage.css" %}">
+    <title>Время маникюра</title>
+</head>
+<body>
+<section>
+	<div class="header">
+
+
+	</div>
+    <div class="links">
+        <div class="links_list"><p><a href=''>Главная страница</a></p></div>
+        <div class="links_list"><p>ссылка №2</p></div>
+        <div class="links_list"><p>ссылка №3</p></div>
+        <div class="links_list"><p><a href=''>Контакты</a></p></div>
+        <div class="links_list"><p><a href='vacations'>Вакансии</a></p></div>
+
+    </div>
+    <div class="we_are">
+        <div class="we_are_text">
+            <p>Какой-то текст1</p>
+
+        </div>
+        <div class="we_are_img">
+            <p>какие-то картинки</p>
+
+        </div>
+    </div>
+</section>
+<script>
+		function createClock(){
+			const section = document.querySelector('section')
+			const square = document.createElement('span')
+
+			var size = Math.random() * 50;
+
+			square.style.width =20 + size + 'px';
+			square.style.height =20 + size + 'px';
+
+			square.style.top = Math.random() *innerHeight + 'px';
+			square.style.left = Math.random() * innerWidth + 'px' ;
+
+			section.appendChild(square);
+
+			setTimeout(() => {
+				square.remove()
+			}, 5000)
+		}
+		setInterval(createClock, 150)
+	</script>
+</body>
+</html>
