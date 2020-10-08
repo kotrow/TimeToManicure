@@ -11,17 +11,31 @@
 </head>
 <body>
 <section>
-	<div class="header">
 
 
-	</div>
     <div class="links">
-        <div class="links_list"><p><a href=''>Главная страница</a></p></div>
-        <div class="links_list"><p>ссылка №2</p></div>
-        <div class="links_list"><p>ссылка №3</p></div>
-        <div class="links_list"><p><a href=''>Контакты</a></p></div>
-        <div class="links_list"><p><a href='vacations'>Вакансии</a></p></div>
+        <a name = 'top'></a>
+        <div class="links_list"  onclick="location.href='/';"><p>Главная страница</p></div>
+        <div class="links_list" ><p>ссылка №2</p></div>
+        <div class="links_list" ><p>ссылка №3</p></div>
+        <div class="links_list" onclick="location.href='#footer';"><p>Контакты</p></div>
+        <div class="links_list" onclick="location.href='vacations';"><p>Вакансии</p></div>
 
+    </div>
+
+
+<div class="header">
+</div>
+
+    <div class="we_are">
+        <div class="we_are_text">
+            <p>Какой-то текст1</p>
+
+        </div>
+        <div class="we_are_img">
+            <p>какие-то картинки</p>
+
+        </div>
     </div>
     <div class="we_are">
         <div class="we_are_text">
@@ -32,6 +46,31 @@
             <p>какие-то картинки</p>
 
         </div>
+    </div>
+    <div class="we_are">
+        <div class="we_are_text">
+            <p>Какой-то текст1</p>
+
+        </div>
+        <div class="we_are_img">
+            <p>какие-то картинки</p>
+
+        </div>
+    </div>
+    <div class="we_are">
+        <div class="we_are_text">
+            <p>Какой-то текст1</p>
+
+        </div>
+        <div class="we_are_img">
+            <p>какие-то картинки</p>
+
+        </div>
+    </div>
+    <div class="footer" >
+        <a name="footer"></a>
+        <a href="#top">К меню</a>
+
     </div>
 </section>
 <script>
@@ -51,9 +90,9 @@
 
 			setTimeout(() => {
 				square.remove()
-			}, 5000)
+			}, 10000)
 		}
-		setInterval(createClock, 150)
+		setInterval(createClock, 300)
 	</script>
 </body>
 </html>

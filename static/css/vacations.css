@@ -6,24 +6,3 @@ body, h1, h2, h3, h4, p, a {
 *{
   box-sizing:border-box
 }
-.header {
-
-  background-color: #1eee;
-  background-image: url(../assets/jdem_masterov.png);
-  background-size: 100%;
-  position: absolute;
-  text-align: center;
-  }
-.content {
-    font-size: 10px;
-    text-align: center;
-    width: 790px;
-    margin: 20px auto 50px auto;
-    padding-top: 20vh;
-}
-.container {
-  display:flex;
-}
-.content{
-  background-color: red;
-}
